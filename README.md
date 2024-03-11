@@ -1,8 +1,8 @@
 # Welcome to your CDK TypeScript project
 
-Get started with CDK development using TypeScript.
+## Get started with CDK development using TypeScript.
 
-The `cdk.json` file configures CDK Toolkit execution.
+## The `cdk.json` file configures CDK Toolkit execution.
 
 ## Handy commands
 
