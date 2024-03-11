@@ -37,7 +37,31 @@ export class AuthAppStack extends cdk.Stack {
     });
 
     this.auth = authApi.root.addResource("auth");
+
+    // NEW
+this.addAuthRoute(
+  "signup",
+  "POST",
+  "SignupFn",
+  'signup.ts'
+);
+
+
+  // this.addAuthRoute("login", "POST", "Login", "login.ts");
+  // this.addAuthRoute("register", "POST", "Register", "register.ts");
+  // this.addAuthRoute("logout", "POST", "Logout", "logout.ts");
+  // this.addAuthRoute("refresh", "POST", "Refresh", "refresh.ts");
+  // this.addAuthRoute("forgot-password", "POST", "ForgotPassword", "forgot-password.ts");
+  // this.addAuthRoute("change-password", "POST", "ChangePassword", "change-password.ts");
+  // this.addAuthRoute("confirm-forgot-password", "POST", "ConfirmForgotPassword", "confirm-forgot-password.ts");
+  // this.addAuthRoute("confirm-sign-up", "POST", "ConfirmSignUp", "confirm-sign-up.ts");
+
+
   }
+
+
+  
+
 
   // NEW
   private addAuthRoute(
