@@ -46,6 +46,15 @@ this.addAuthRoute(
   'signup.ts'
 );
 
+   // NEW
+   this.addAuthRoute(
+    "confirm_signup",
+    "POST",
+    "ConfirmFn",
+    "confirm-signup.ts"
+  );
+  
+
 
   // this.addAuthRoute("login", "POST", "Login", "login.ts");
   // this.addAuthRoute("register", "POST", "Register", "register.ts");
