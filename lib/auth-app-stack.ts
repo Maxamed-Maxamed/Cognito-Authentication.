@@ -53,6 +53,12 @@ this.addAuthRoute(
     "ConfirmFn",
     "confirm-signup.ts"
   );
+  // NEW
+  this.addAuthRoute('signout', 'GET', 'SignoutFn', 'signout.ts');
+  this.addAuthRoute('signin', 'POST', 'SigninFn', 'signin.ts'); 
+
+  // NEW
+  
   
 
 
